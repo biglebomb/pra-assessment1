@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             tools:context="org.d3if4090.praassessment1.PersegiFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etPanjang" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:hint="Panjang" android:text="0"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etLebar"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/etPanjang"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:hint="Lebar"
+            android:text="0"/>
+    <Button
+            android:text="Hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btHitung"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etLebar" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="Luas = ..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvLuas"
+            android:textSize="24sp" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/btHitung" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="Keliling = ..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvKeliling"
+            android:textSize="24sp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvLuas" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:text="Share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btShare"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvKeliling" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
